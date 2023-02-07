@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -137,15 +136,19 @@
   border-radius: 10px;
 }
 
-.metamaskContainer {
+.buttonsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.metamaskContainer span {
-  margin-top: 8px;
+.buttonsContainer button {
+  margin-top: 20px;
+}
+
+.buttonsContainer span {
+  margin-top: 60px;
 }
 /* Conic Gradient Animation */
 .thirteen::before {

@@ -34,9 +34,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.metamaskContainer}>
+        <div className={styles.buttonsContainer}>
           <button className={styles.login} onClick={connectMetamask}>
             <h6>Connect Metamask</h6>
+          </button>
+          <button
+            className={styles.login}
+            onClick={() => console.log("wallet connect")}
+          >
+            <h6>Connect WalletConnect</h6>
           </button>
           {active ? (
             <>
@@ -50,12 +56,6 @@ export default function Home() {
           ) : (
             <span>Not connected</span>
           )}
-          {/* <button
-              className={styles.login}
-              onClick={() => console.log('connect wallet')}
-            >
-              <h6>Wallet Connect</h6>
-            </button> */}
         </div>
       </main>
     </>
