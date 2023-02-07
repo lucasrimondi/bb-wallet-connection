@@ -130,6 +130,23 @@
   z-index: -1;
 }
 
+.login {
+  font-size: 40px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.metamaskContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metamaskContainer span {
+  margin-top: 8px;
+}
 /* Conic Gradient Animation */
 .thirteen::before {
   animation: 6s rotate linear infinite;
