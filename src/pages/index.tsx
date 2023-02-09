@@ -1,41 +1,19 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
+import CustomButton from "../components/CustomButton";
 
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Head>
-        <title>Connecting wallet test</title>
-        <meta name="description" content="BB first approach" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <div className={styles.metamaskContainer}>
-          <button
-            className={styles.login}
-            onClick={() => console.log("probando nueva lib")}
-          >
-            <h6>Connect Wallet</h6>
-          </button>
-          {false ? (
-            <>
-              <span>
-                Connected with <b>{"account"}</b>
-              </span>
-              <button
-                className={styles.login}
-                onClick={() => console.log("probando nueva lib")}
-              >
-                <h6>Disconnect</h6>
-              </button>
-            </>
-          ) : (
-            <span>Not connected</span>
-          )}
-        </div>
-      </main>
+      {/* Predefined button  */}
+      <Web3Button icon="hide" label="Connect Wallet TEST" balance="hide" />
+      <br />
+
+      {/* Network Switcher Button */}
+      <Web3NetworkSwitch />
+      <br />
+
+      {/* Custom button */}
+      <CustomButton />
     </>
   );
 }
